@@ -1,6 +1,10 @@
 
 # A PyTorch framework for federated learning
 
+**What is federated Learning?**
+
+Federated learning is a machine learning approach where models are trained across multiple decentralized devices or servers holding local data samples, without transferring the data to a central server. This ensures data privacy and security by keeping sensitive information on local devices. The system aggregates locally computed model updates to improve a global model. It is commonly used in applications like personalized recommendations, healthcare, and finance. Federated learning addresses challenges like data heterogeneity, communication efficiency, and privacy concerns.
+
 This is a baseline framework for federated learning.
 
 It supports various datasets and optimization strategies.
