@@ -1,0 +1,5 @@
+data/
+#ignore realworldfl file
+realworldfl/
+#ignore .pyc  files
+models/__pycache__
