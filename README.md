@@ -211,7 +211,7 @@ python main.py --dataset cifar10 --model cnn --frac 1.0 --epochs 1000 --lr 0.02 
 - load_checkpoint (action='store_true'): whether to load model (default: do not load)
 - no_checkpoint (action='store_true'): whether to save best model (default: checkpoint)
 
-###For the specific settings:
+### For the specific settings:
 
 Namespace(epochs=300, n_clients=100, frac0.1, local_ep=5, local_bs=100, test_bs=128, 1r=0.01, lr_decay=0.9, lr_decay_step_size=500, model=scnn', dataset='mnist', iid=False, spc=False, beta=0.2, n_classes=10, n_channels=1, timizer=ssgds, momentuffw0.0, fed_strategy=sfedavgs, alpha=1 .0, n_gpu=4, n_procs=1, seed=0, no_record=False, load_checkpoint=False, no_checkpoint=False), the resulst are shownn as a graph
 
