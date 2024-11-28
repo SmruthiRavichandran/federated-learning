@@ -5,16 +5,42 @@
 
 Federated learning is a machine learning approach where models are trained across multiple decentralized devices or servers holding local data samples, without transferring the data to a central server. This ensures data privacy and security by keeping sensitive information on local devices. The system aggregates locally computed model updates to improve a global model. It is commonly used in applications like personalized recommendations, healthcare, and finance. Federated learning addresses challenges like data heterogeneity, communication efficiency, and privacy concerns.
 
-This is a baseline framework for federated learning.
+Here the federated Learning is combined with CNN model and LSTM with CharLSTM model uses an LSTM to model sequential data and learn dependencies between characters.
+Character-Level Language Model: This model can predict the next character in a sequence based on previous characters.
 
-It supports various datasets and optimization strategies.
-
+**The settings that are currentlz being used are**
+1. Epochs =300
+2. n_clients= 100
+3. frac=0.1
+4. local_ep=5
+5. local_bs=100
+6. test_bs=128
+7. lr=0.01
+8. lr_decay=0.9
+9. lr_decay_step_size=500
+10. model=CNN
+11. dataset=mnist
+12. iid=false
+13. spc=false
+14. beta=0.2
+15. n_class=10
+16. n_channels=1
+17. timizer=sgd
+18. momentum=0.0
+19. fed_stratergy=fedavg
+20. alpha=1.0
+21. n_gpu=4
+22. n_procs=1
+23. seed=0
+24. no_records=false
+25. load_checkpoint=false
+26. no_checkpoint=false
 ---
 ## Index
 1. [Install requirements](#install-requirements)
-1. [Catalog](#catalog)
-1. [Training](#training)
-1. [Options](#options)
+2. [Catalog](#catalog)
+3. [Training](#training)
+4. [Options](#options)
 
 ---
 
@@ -28,8 +54,8 @@ pip install -r requirements.txt
 
 ## [Catalog](#index)
 1. [Datasets](#datasets)
-1. [Models](#models)
-1. [Federated learning strategies](#federated-learning-strategies)
+2. [Models](#models)
+3. [Federated learning strategies](#federated-learning-strategies)
 
 ### Datasets
 
@@ -55,9 +81,9 @@ This project contains a small version of FEMNIST with 520 clients.
 For all tasks for FedDyn, it is good to keep `alpha` as 1.0, which is a default value.
 
 1. [MNIST](#mnist)
-1. [Fashion-MNIST](#fashion-mnist)
-1. [FEMNIST](#femnist)
-1. [CIFAR-10, CIFAR-100](#cifar-10-cifar-100)
+2. [Fashion-MNIST](#fashion-mnist)
+3. [FEMNIST](#femnist)
+4. [CIFAR-10, CIFAR-100](#cifar-10-cifar-100)
 
 ### MNIST
 
