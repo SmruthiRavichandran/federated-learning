@@ -8,33 +8,7 @@ Federated learning is a machine learning approach where models are trained acros
 Here the federated Learning is combined with CNN model and LSTM with CharLSTM model uses an LSTM to model sequential data and learn dependencies between characters.
 Character-Level Language Model: This model can predict the next character in a sequence based on previous characters.
 
-**The settings that are currentlz being used are**
-1. Epochs =300
-2. n_clients= 100
-3. frac=0.1
-4. local_ep=5
-5. local_bs=100
-6. test_bs=128
-7. lr=0.01
-8. lr_decay=0.9
-9. lr_decay_step_size=500
-10. model=CNN
-11. dataset=mnist
-12. iid=false
-13. spc=false
-14. beta=0.2
-15. n_class=10
-16. n_channels=1
-17. timizer=sgd
-18. momentum=0.0
-19. fed_stratergy=fedavg
-20. alpha=1.0
-21. n_gpu=4
-22. n_procs=1
-23. seed=0
-24. no_records=false
-25. load_checkpoint=false
-26. no_checkpoint=false
+
 ---
 ## Index
 1. [Install requirements](#install-requirements)
